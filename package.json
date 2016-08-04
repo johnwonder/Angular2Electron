@@ -1,0 +1,35 @@
+{
+  "name": "ng2-electron-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+   "postinstall": "npm run typings install",
+    "typings": "typings",
+    "tsc": "tsc",
+    "build": "npm run frontend && tsc && gulp electron",
+    "frontend": "gulp frontend && tsc",
+    "serve": "live-server dist/frontend/",
+    "apps": "npm run build && gulp apps"
+  },
+  "dependencies":{
+    "angular2": "2.0.0-beta.13",
+    "systemjs": "0.19.20",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.6.6"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "live-server": "^1.0.0",
+    "run-sequence": "^1.2.2",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.2"
+  }
+}
